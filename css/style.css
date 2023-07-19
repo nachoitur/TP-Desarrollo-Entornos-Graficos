@@ -1,0 +1,240 @@
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+html{
+    box-sizing: border-box;
+    font-size:62.5%
+}
+
+body{
+    background-color:#CCFFCC;
+}
+
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+
+p{
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color:var(--blanco);
+
+}
+a{
+    text-decoration: none;
+}
+img {
+
+    max-width: 100%;
+
+}
+
+
+
+.header{
+    display: flex;
+    background-color: #66CCFF ;
+    justify-content: center;
+    align-items: center;
+    
+
+    
+}
+
+.bloke-centrado{
+    margin: 1rem;
+    background-color: #66CCFF ;
+    box-shadow: 0 0 3px #000;
+}
+.container{
+    display: flex; 
+    justify-content: center;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+/** Buscador **/
+input{
+    height: 4rem;
+    width: 35rem;
+    padding: 1rem;
+    border-radius: 5px 0 0 5px;
+    border:0;
+    font-size: 20px;
+   
+}
+   
+button{
+    background-color: #66CCFF ;
+    border-radius: 0 5px 5px 0;
+    border: 1;
+    height: 4rem;
+    width:4rem ;
+ 
+
+}
+
+/** Buscador cierre **/
+.logo{
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+.logo a img{
+    
+    width: 70rem;
+    height: 7rem; 
+    margin-left: 6rem;
+}
+
+
+
+.iniciar-sesion {
+ 
+ display:flex;
+ align-items: center;
+ margin-right: 3rem;
+ 
+}
+
+.iniciar-sesion__enlace{
+
+    text-align: center;
+    margin-top:3rem;
+    width: 15rem;
+    background-color:#000;
+    border-radius: 3rem; 
+    color:var(--negro); 
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+   
+
+}
+
+
+    .iniciar-sesion__imagen{
+        height: 4rem;
+        width:4rem ;
+        margin-left: 2rem;
+        margin-top:3rem;
+
+    }
+
+h4{
+    padding: 1rem;
+    color:#fff;
+}
+
+.ruta{
+    height: 2.5rem;
+}
+
+.ruta a{
+    padding:4rem;
+    font-size: 1.5rem;
+    color:#000;
+    font-weight:700;
+}
+
+.principal{
+    display: flex;
+
+
+}
+
+.menu{
+    width:20%;
+    background-color: #66CCFF ;
+    min-height: 50rem;
+    margin-top: 3rem;
+    border-radius: 3rem; 
+
+}
+
+.contenido{
+    width:80%;
+    background-color: #66CCFF ;
+    margin-top: 3rem;
+    border-radius: 3rem; 
+}
+
+.menu h2{
+    text-align: center;
+    background-color: #000;
+    color:#fff;
+    padding:1rem;
+    margin-bottom:4rem;
+    border-radius: 3rem 3rem 0 0; 
+   
+}
+.menu ul{
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu ul a{
+    color:white;
+    background: #121212;
+    display: block;
+    width: 100%;
+    padding: 0.6rem 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu ul li{
+    border-bottom: .1rem solid #333435 ;
+}
+
+.menu ul ul a{
+    background-color: #5d5c63;
+    padding-left: 3rem;
+}
+
+.menu ul ul{
+    height: 0px;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.menu ul li:hover ul{
+    height:70px;
+    overflow: hidden;
+}
+
+.contenido h2{
+    text-align: center;
+    padding: 3rem;
+   
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.vacantes{
+    display: flex;
+    padding: 2rem;
+    background-color: #CCFFCC;
+    align-items: center;
+
+}
+
+.vancantes__anuncios{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.imagen_vacante{
+    border: .1rem solid #333435 ;
+}
+
+.vacantes:last-of-type{
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;}
+.footer{
+    height: 8.5rem;
+}
