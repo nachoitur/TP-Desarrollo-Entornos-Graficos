@@ -222,16 +222,14 @@ button{
         width: 20%;
         border-radius: 3rem ; 
         min-height: 50rem;
+        
        
     }
+    
 }
 
-.contenido{
-    width:80%;
-    background-color: #66CCFF ;
-    margin-top: 3rem;
-    border-radius: 3rem; 
-}
+
+
 
 .menu h2{
     text-align: center;
@@ -321,32 +319,95 @@ button{
     }
     
 }
+.contenido{
+    width: 100%;
+    background-color: #66CCFF ;
+    
+}
+@media (min-width:768px){
+    .contenido {
+    margin: 1rem;
+   
+    box-shadow: 0 0 3px #000;
+    margin-right: 0;
+    margin-top: 3rem;
+    border-radius: 3rem;
+    margin-bottom: 0;
+    }
+}
+
 
 .contenido h2{
     text-align: center;
     padding: 3rem;
-   
     font-weight: 700;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
 .vacantes{
     display: flex;
+    flex-direction: column;
     padding: 2rem;
     background-color: #CCFFCC;
     align-items: center;
+   
+
+}
+
+@media (min-width:768px){
+
+    .vacantes{
+        display: flex;
+        flex-direction: row;
+        padding: 2rem;
+        background-color: #CCFFCC;
+        align-items: center;
+       
+    }
+
+    
+    
+
 
 }
 
 .vancantes__anuncios{
     display: flex;
     flex-direction: column;
+    align-items: center;
 
 }
+
+@media (min-width:768px){
+
+
+    .vancantes__anuncios{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    
+    }
+}
+
 
 .imagen_vacante{
     border: .1rem solid #333435 ;
+    width: 10rem;
+    height: 10rem;
 }
+
+@media (min-width:768px){
+    .vacantes_imagen{
+        margin-left:  1rem;
+    }
+    .imagen_vacante{ 
+        width: 35rem;
+        height: 15rem;
+        
+    }
+}
+
 
 .vacantes:last-of-type{
     border-bottom-left-radius: 2rem;
@@ -387,9 +448,21 @@ h4{
 .footer{
 
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     padding: 1rem;
     height: auto;
+}
+
+@media (min-width:768px){
+    .footer{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 1rem;
+        height: auto;
+    }
 }
 .contenido--derecho{
     display: flex;
