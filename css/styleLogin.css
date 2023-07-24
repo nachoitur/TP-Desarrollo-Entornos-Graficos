@@ -32,8 +32,6 @@ img {
 
 }
 
-
-
 .header{
     display: flex;
     flex-direction: column;
@@ -52,6 +50,7 @@ img {
     }
 
 }
+
 
 .bloke-centrado{
     margin: 1rem;
@@ -104,6 +103,7 @@ img {
         margin-bottom: 3rem;
     }
 }
+
 
 
 .iniciar-sesion {
@@ -319,16 +319,34 @@ img {
     
 }
 
-/* SECCION DERECHA DEL MENU*/
+/*.contenido{
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #66CCFF;
+    width: 100%;
+    margin: 1rem;
+    box-shadow: 0 0 3px #000;
+    margin-right: 0;
+    margin-top: 3rem;
+    border-radius: 3rem;
+    margin-bottom: 0;
+    
+}*/
+
 .contenido{
+    display:flex;
     width: 100%;
     background-color: #66CCFF ;
+    justify-content: center;
+    align-items: center;
     
 }
 @media (min-width:768px){
     .contenido {
     margin: 1rem;
-   
     box-shadow: 0 0 3px #000;
     margin-right: 0;
     margin-top: 3rem;
@@ -337,145 +355,137 @@ img {
     }
 }
 
-
-.contenido h2{
-    text-align: center;
-    padding: 3rem;
-    font-weight: 700;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-
-.vacantes{
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    background-color: #CCFFCC;
-    align-items: center;
-   
-
+.login{ 
+    width: 100%;    
 }
 
 @media (min-width:768px){
+    .login{ 
+        width: 60%;    
+    }
+    
+}
+.login h2{
+    font-size: 2.6rem;
+    text-align: center;
+    margin-top: 5rem;
+}
 
-    .vacantes{
+.input-todos{
+
+    border-radius: 1rem;
+    padding: 3rem 4rem;
+}
+.login .input-box{
+    width: 100%;
+    height: 5rem;
+    margin: 30px 0;
+    position: relative;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border:2px solid rgba(252, 252, 252, 0.7);
+    border-radius: 4rem;;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 20px 45px 20px 20px;
+
+}
+
+.input-box input::placeholder{
+    color:#171816;
+}
+
+.input-box i {
+    position:absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.login .btn{
+    text-align: center;
+    margin-top:1rem;
+    width: 100%;
+    background-color:#000;
+    border: none;
+    outline: none;
+    border-radius: 4rem;
+    box-shadow: 0 0 10px rgba(0,0,0,.1); 
+    color:white; 
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;}
+
+
+    .registrarse p {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .registrarse p a{
+        font-weight: 700;
+        color: #000000;
+        text-decoration: none;
+
+    }
+
+    .registrarse p a:hover{
+        text-decoration: underline;
+    }
+
+
+
+
+    /* SECCION DEL FOOTER*/
+    h4{
+        color:#000;
+        font-size: 1.5rem;
+        margin: 0;
+        font-weight: 700;
+        padding: 1rem;
+    }
+    
+    .iconos_imagen{
+        height: 2rem;
+        width:2rem ;
+    }
+    
+    .itens{
         display: flex;
-        flex-direction: row;
-        padding: 2rem;
-        background-color: #CCFFCC;
         align-items: center;
-       
     }
-
     
-    
-
-
-}
-
-.vancantes__anuncios{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-@media (min-width:768px){
-
-
-    .vancantes__anuncios{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    
-    }
-}
-
-
-.imagen_vacante{
-    border: .1rem solid #333435 ;
-    width: 10rem;
-    height: 10rem;
-}
-
-@media (min-width:768px){
-    .vacantes_imagen{
-        margin-left:  1rem;
-    }
-    .imagen_vacante{ 
-        width: 35rem;
-        height: 15rem;
-        
-    }
-}
-
-
-.vacantes:last-of-type{
-    border-bottom-left-radius: 2rem;
-    border-bottom-right-radius: 2rem;}
-
-.ver-mas{
-    text-align: center;
-    margin-top:3rem;
-    margin-bottom: 1rem;
-    width: 10rem;
-    background-color:#66CCFF;
-    border-radius: 3rem; 
-    color:var(--negro); 
-    font-size: 1.5rem;
-    font-weight: 700;
-    font-family: Arial, Helvetica, sans-serif;
-    border-color: #000;
-}
-
-h4{
-    color:#000;
-    font-size: 1.5rem;
-    margin: 0;
-    font-weight: 700;
-    padding: 1rem;
-}
-
-.iconos_imagen{
-    height: 2rem;
-    width:2rem ;
-}
-
-.itens{
-    display: flex;
-    align-items: center;
-}
-
-
-/* SECCION DEL FOOTER*/
-.footer{
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding: 1rem;
-    height: auto;
-}
-
-@media (min-width:768px){
     .footer{
 
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-evenly;
         padding: 1rem;
         height: auto;
     }
-}
-.contenido--derecho{
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-}
-
-h3{
-    margin-bottom: 1rem;
-}
-
-/*  Estilos para el LOGIN*/
-
+    
+    @media (min-width:768px){
+        .footer{
+    
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding: 1rem;
+            height: auto;
+        }
+    }
+    .contenido--derecho{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+    
+    h3{
+        margin-bottom: 1rem;
+    }
